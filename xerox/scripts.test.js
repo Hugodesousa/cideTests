@@ -1,8 +1,10 @@
-const { defineprice } = require('./scripts');
+const {definePrice} = require('./scripts')
 
-describe('8 - Crie o cálculo total do preço de entrada', () => {
-    it('ao receber um array de visitantes, retorna um objeto com a contagem', () => {
-
-      expect(actual).toEqual(expected);
+describe('Verifica se a função definePrice retornas os valores esperados', () => {
+    it('Ao receber 5, 48, 117, 230, retorna R$ 3,00, R$ 12,75, R$ 24,20 e R$ 35,35 respctivamente.', () => {
+      expect(definePrice(5)).toEqual('R$ 3.00');
+      expect(definePrice(48)).toEqual('R$ 12.75');
+      expect(definePrice(117)).toEqual('R$ 24.20');
+      expect(definePrice(230)).toEqual('R$ 35.35');
     })
     });
